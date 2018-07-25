@@ -22,7 +22,7 @@ public class Button_Behavior : MonoBehaviour {
             if (Input.GetButtonDown("Interaction"))
             {
                 iOnOff += 1; // 1 ou 0 selon appuie barre espace
-                //Debug.Log(iOnOff);
+                Debug.Log(iOnOff);
             }
         }
     }
@@ -36,6 +36,7 @@ public class Button_Behavior : MonoBehaviour {
     {
         if (collision.tag == "Player")
         {
+            Debug.Log("collision avec bouton");
             InInterrupteur = true;
         }
     }
