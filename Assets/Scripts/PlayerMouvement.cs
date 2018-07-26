@@ -54,9 +54,24 @@ public class PlayerMouvement : MonoBehaviour {
                     }
                 }
                 
-                else if (Tag_currentPoint == "CornerPorte")
+                else if (Tag_currentPoint == "Porte2Corner")
                 {
                     newDestination = Pos_currentPoint.GetComponent<Porte2_Behavior>().GetNewDestination();
+                    destination = transform.position + newDestination; // nouvelle destination
+                    initPos = transform.position; // position au début du mouvement
+                    timer = Time.time + deltaTime; // Le timer est mis à jour, trigger de la highest condition if
+                }
+
+                else if (Tag_currentPoint == "CornerPorte")
+                {
+                    newDestination = Pos_currentPoint.GetComponent<Corner_Behavior>().GetNewDestination();
+                    destination = transform.position + newDestination; // nouvelle destination
+                    initPos = transform.position; // position au début du mouvement
+                    timer = Time.time + deltaTime; // Le timer est mis à jour, trigger de la highest condition if
+                }
+                else if (Tag_currentPoint == "CornerInhib")
+                {
+                    newDestination = Pos_currentPoint.GetComponent<Porte2Inhib_Behavior>().GetNewDestination();
                     destination = transform.position + newDestination; // nouvelle destination
                     initPos = transform.position; // position au début du mouvement
                     timer = Time.time + deltaTime; // Le timer est mis à jour, trigger de la highest condition if
@@ -88,7 +103,16 @@ public class PlayerMouvement : MonoBehaviour {
         {
             Tag_currentPoint = "CornerPorte";
             Pos_currentPoint = collision.transform;
-
+        }
+        else if (collision.tag == "Porte2Corner")
+        {
+            Tag_currentPoint = "Porte2Corner";
+            Pos_currentPoint = collision.transform;
+        }
+        else if (collision.tag == "CornerInhib")
+        {
+            Tag_currentPoint = "CornerInhib";
+            Pos_currentPoint = collision.transform;
         }
     }
 

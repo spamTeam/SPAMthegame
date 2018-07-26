@@ -7,6 +7,10 @@ TagManager:
   - Porte
   - Attente
   - Interrupteur
+  - CornerPorte
+  - Trap
+  - Porte2Corner
+  - CornerInhib
   layers:
   - Default
   - TransparentFX
