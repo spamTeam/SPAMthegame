@@ -19,7 +19,7 @@ public class EndLevel : MonoBehaviour {
 
         if (EndLevelCollision)
         {
-            if (Input.GetButtonDown("Enter"))
+            if (Input.GetButtonDown("NextLevel"))
             {
                 SceneManager.LoadScene(sceneName);
             }

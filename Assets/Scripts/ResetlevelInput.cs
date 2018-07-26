@@ -17,7 +17,11 @@ public class ResetlevelInput : MonoBehaviour {
         if (Input.GetButtonDown("Reset"))
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);     
-        }        
+        }
+        else if (Input.GetButtonDown("SelectionLevel"))
+        {
+            SceneManager.LoadScene("Mainmenu");
+        }
     }
 
 }
