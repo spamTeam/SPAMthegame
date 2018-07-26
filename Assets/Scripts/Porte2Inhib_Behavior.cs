@@ -24,15 +24,83 @@ public class Porte2Inhib_Behavior : MonoBehaviour {
     private Vector3 CollisionPos;
     private Vector3 CurrentPos;
 
+    //for animation
+    public Animator transitionAnim1;
+    private double iOnOffTOT;
+    private double iOnOffLast;
+    private double countrotation;
 
     // Use this for initialization
     void Start () {
         startAngle = transform.localRotation.eulerAngles.z * Mathf.PI / 180;
         modOnOff = 0;
+        iOnOffLast = 0;
+        countrotation = 0;
     }
 
     // Update is called once per frame
     void Update () {
+
+        //// Gesion des animation
+        iOnOffTOT = ButtonBehavior.OnOff();
+        if (iOnOffTOT != iOnOffLast)//boucle qui sera exécutez uniquement si il y a eu un press
+        {
+            iOnOffLast = iOnOffTOT;
+
+            if (Left1 == Left3 && Left2 == Left4) //test si on a un interupteur 2 ou 4 position
+            {
+                if (countrotation == 0)
+                {
+                    countrotation = 1;
+                    transitionAnim1.SetTrigger("rotation1"); //appel de la fonction 
+                    Debug.Log("rotation1");
+                }
+                else
+                {
+                    countrotation = 0;
+                    transitionAnim1.SetTrigger("rotation2");
+                    Debug.Log("rotation2");
+
+                }
+
+            }
+            else
+            {
+                if (countrotation == 0)
+                {
+                    countrotation = 1;
+                    transitionAnim1.SetTrigger("rotation1");
+                    //Debug.Log("rotation1");
+                }
+                else if (countrotation == 1)
+                {
+                    countrotation = 2;
+                    transitionAnim1.SetTrigger("rotation2");
+                    //Debug.Log("rotation2");
+
+                }
+                else if (countrotation == 2)
+                {
+                    countrotation = 3;
+                    transitionAnim1.SetTrigger("rotation3");
+                    //Debug.Log("rotation3");
+
+                }
+                else if (countrotation == 3)
+                {
+                    countrotation = 0;
+                    transitionAnim1.SetTrigger("rotation4");
+                    //Debug.Log("rotation4");
+                }
+
+                //sound
+
+            }
+
+        }
+
+        ////FIN animation ////
+
 
         if (InCollision) {
             if (Mathf.Abs(CollisionPos.x - CurrentPos.x) > Mathf.Abs(CollisionPos.y - CurrentPos.y))

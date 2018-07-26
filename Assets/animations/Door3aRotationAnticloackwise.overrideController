@@ -1,0 +1,12 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Door3aRotationAnticloackwise
+  m_Controller: {fileID: 9100000, guid: 7cdc6dda5d817e440912d1dfe52f4224, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: d4cf7a1d6b4d5544f82160f2d5629c37, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 93cbc5577fef9554eb5c87e6fbcda735, type: 2}
