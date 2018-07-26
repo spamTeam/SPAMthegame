@@ -11,7 +11,7 @@ public class PlayerMouvement : MonoBehaviour {
     Vector3 initPos;
     Vector3 startPos;
     Vector3 destination;
-
+    Vector3 newDestination;
 
 
     void Start () {
@@ -21,10 +21,6 @@ public class PlayerMouvement : MonoBehaviour {
 
 
     void Update () {
-
-
-        //Debug.Log(Tag_currentPoint);
-
 
         // Si mouvement, trigger par collision avec Porte ou input dans Attente
         if (timer > Time.time)
@@ -37,31 +33,43 @@ public class PlayerMouvement : MonoBehaviour {
 
         // Si pas de mouvement
         else
-        {   // Si dans une hitbox
+        {    // Si dans une hitbox
             if (Pos_currentPoint != null)
             {   // Si la hitbox est une porte
                 if (Tag_currentPoint == "Porte")
                 {
-                    destination = transform.position + Pos_currentPoint.GetComponent<PorteBehavior>().GetNewDestination(); // nouvelle destination
+                    newDestination = Pos_currentPoint.GetComponent<PorteBehavior>().GetNewDestination();
+                    destination = transform.position + newDestination; // nouvelle destination
                     initPos = transform.position; // position au début du mouvement
                     timer = Time.time + deltaTime; // Le timer est mis à jour, trigger de la highest condition if
                 } // Si la hitbox est une Attente
                 else if (Tag_currentPoint == "Attente") 
                 {
-                    destination = transform.position + Pos_currentPoint.GetComponent<AttenteBehavior>().GetNewDestination();
+                    newDestination = Pos_currentPoint.GetComponent<AttenteBehavior>().GetNewDestination();
+                    destination = transform.position + newDestination;
                     if (destination != transform.position) // si nous ne restons pas immobile
                     {
                         initPos = transform.position;
                         timer = Time.time + deltaTime;
                     }
-                }              
+                }
+                
+                else if (Tag_currentPoint == "CornerPorte")
+                {
+                    newDestination = Pos_currentPoint.GetComponent<Porte2_Behavior>().GetNewDestination();
+                    destination = transform.position + newDestination; // nouvelle destination
+                    initPos = transform.position; // position au début du mouvement
+                    timer = Time.time + deltaTime; // Le timer est mis à jour, trigger de la highest condition if
+                }
             }
             else // Si ni mouvement, ni collision avec hitbox
             {
-                Debug.LogError("PAS DE PORTE NI D'ATTENTE !");
+                Debug.LogError("SPAAAAACE !");
             }
         }
     }
+
+
 
     // Si dans une hitbox
     private void OnTriggerEnter2D(Collider2D collision)
@@ -76,17 +84,24 @@ public class PlayerMouvement : MonoBehaviour {
             Tag_currentPoint = "Attente";
             Pos_currentPoint = collision.transform;
         }
-    }
+        else if (collision.tag == "CornerPorte")
+        {
+            Tag_currentPoint = "CornerPorte";
+            Pos_currentPoint = collision.transform;
 
+        }
+    }
 
 
     // Lorsqu'on sort d'une Porte ou d'une Attente, plus de position
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.tag == "Porte" || collision.tag == "Attente")
+        if (collision.tag == "Porte" || collision.tag == "Attente" || collision.tag =="CornerPorte")
         {
             Tag_currentPoint = "En Chemin";
             Pos_currentPoint = null;
         }
     }
+
+
 }

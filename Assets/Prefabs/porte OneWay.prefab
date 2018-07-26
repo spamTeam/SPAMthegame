@@ -78,11 +78,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31e62e1db29615e48bba2d4837a0db8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination_1: {x: 0, y: 0}
-  destination_2: {x: 0, y: 0}
+  destination_1: {x: 0, y: 3}
+  destination_2: {x: 3, y: 0}
   destination_3: {x: 0, y: 0}
-  destination_4: {x: 0, y: 0}
+  destination_4: {x: -3, y: 0}
   SensRotation: 1
+  ButtonBehavior: {fileID: 0}
 --- !u!212 &212794506013739678
 SpriteRenderer:
   m_ObjectHideFlags: 1

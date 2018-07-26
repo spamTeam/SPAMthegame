@@ -8,18 +8,19 @@ public class AttenteBehavior : MonoBehaviour {
     public Vector2 destination_Left;
     public Vector2 destination_Up;
     public Vector2 destination_Down;
+    private Vector2 destination;
     private string Pressed_Direction;
 
     // Use this for initialization
     void Start() {
-
     }
 
     // Update is called once per frame
-    void Update() {
+    void Update()
+    {
+        Pressed_Direction = "None";
         if (Input.anyKeyDown)
         {
-            Debug.Log("kew : " + Input.inputString);
             Pressed_Direction = Input.inputString;
         }
 
@@ -31,24 +32,25 @@ public class AttenteBehavior : MonoBehaviour {
         switch (Pressed_Direction)
         {
             case "d":
-                Debug.Log("pre : " + Pressed_Direction);
-                Pressed_Direction = "None";
-                return destination_Right;
+                destination = destination_Right;
+                return destination;
             case "q":
-                Pressed_Direction = "None";
-                return destination_Left;
+                destination = destination_Left;
+                return destination;
             case "z":
-                Pressed_Direction = "None";
-                return destination_Up;
+                destination = destination_Up;
+                return destination;
             case "s":
-                Pressed_Direction = "None";
-                return destination_Down;
+                destination = destination_Down;
+                return destination;
             default:
-                return Vector2.zero;
+                destination = Vector2.zero ;
+                return destination;
         }
+
     }
 
-   
+
     private void OnDrawGizmos() // Creation d'un carré visible uniquement dans l'éditeur
     {
         Gizmos.color = Color.red;
