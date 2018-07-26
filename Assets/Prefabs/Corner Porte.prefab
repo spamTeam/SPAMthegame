@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4157407206208962}
   - component: {fileID: 212932984542438140}
   - component: {fileID: 61456863488534422}
-  - component: {fileID: 114272757994058084}
+  - component: {fileID: 114003390481935438}
   m_Layer: 0
   m_Name: Corner Porte
   m_TagString: CornerPorte
@@ -35,13 +35,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1196354814033948}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -3.819, y: -1.251, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -3.83, y: -1.26, z: 0}
   m_LocalScale: {x: 0.35710788, y: 0.35710788, z: 0.35710788}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!61 &61456863488534422
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -58,7 +58,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.25, y: 1.24}
+    oldSize: {x: 3.09, y: 2.98}
     newSize: {x: 2.63, y: 2.52}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -67,7 +67,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.9358501, y: 2}
   m_EdgeRadius: 0
---- !u!114 &114272757994058084
+--- !u!114 &114003390481935438
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -78,8 +78,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d479ac46a9ad74aab594f5d2acc0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination_Horizontal: {x: 0, y: 3}
-  destination_Vertical: {x: 3, y: 0}
+  destination_Horizontal1: {x: 3, y: 0}
+  destination_Vertical1: {x: 0, y: 3}
+  destination_Horizontal2: {x: 3, y: 0}
+  destination_Vertical2: {x: 0, y: -3}
+  destination_Horizontal3: {x: -3, y: 0}
+  destination_Vertical3: {x: 0, y: -3}
+  destination_Horizontal4: {x: -3, y: 0}
+  destination_Vertical4: {x: 0, y: 3}
+  ButtonBehavior: {fileID: 0}
+  SensRotation: 1
 --- !u!212 &212932984542438140
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -115,7 +123,7 @@ SpriteRenderer:
   m_SortingLayerID: 392048427
   m_SortingLayer: 1
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1929ae504a37e24499f0130a476335cf, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 042980e1ae70e204f9335a578d94bfce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
