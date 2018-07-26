@@ -34,10 +34,10 @@ public class AttenteBehavior : MonoBehaviour {
             case "d":
                 destination = destination_Right;
                 return destination;
-            case "q":
+            case "a":
                 destination = destination_Left;
                 return destination;
-            case "z":
+            case "w":
                 destination = destination_Up;
                 return destination;
             case "s":

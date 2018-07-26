@@ -241,7 +241,7 @@ Prefab:
         type: 2}
       propertyPath: ButtonBehavior
       value: 
-      objectReference: {fileID: 1275655127}
+      objectReference: {fileID: 2038979160}
     - target: {fileID: 114006759760564476, guid: 4e95754c6d8dd8e48bd4786dede6184b,
         type: 2}
       propertyPath: destination_3.y
@@ -1292,12 +1292,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1275655127 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 114910595921743032, guid: 193905db3feca30468bb638865ee6333,
-    type: 2}
-  m_PrefabInternal: {fileID: 1674397908}
-  m_Script: {fileID: 11500000, guid: d0d03b5a60c4e3d4f8b3e9d59668d400, type: 3}
 --- !u!1001 &1417561308
 Prefab:
   m_ObjectHideFlags: 0

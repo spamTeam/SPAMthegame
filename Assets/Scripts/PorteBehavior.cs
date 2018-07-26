@@ -35,13 +35,14 @@ public class PorteBehavior : MonoBehaviour {
             {
                 mod2OnOff = iOnOff % 2;
                 transform.rotation = Quaternion.EulerAngles(new Vector3(0, 0, startAngle - Mathf.PI / 2 * (SensRotation * (float)mod2OnOff)));
+                //rotation à 2 position
             }
             else
             {
                 transform.rotation = Quaternion.EulerAngles(new Vector3(0, 0, startAngle - Mathf.PI / 2 * (SensRotation * (float)modOnOff)));
-
+                //rotation à 4 position
             }
-        }
+        } //pour l'animation, on a soit deux positions soit quatre. Changement uniquement à 90°. Il faut prendre en compte la variable sens de rotation (1=horaire, -1=antihorairee)
     }
     
 
