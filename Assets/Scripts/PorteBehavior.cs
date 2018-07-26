@@ -20,22 +20,26 @@ public class PorteBehavior : MonoBehaviour {
     void Start () {        
         startAngle = transform.localRotation.eulerAngles.z * Mathf.PI / 180;
         modOnOff = 0;
+
     }
 
 
-    void Update () { // GetComponent Marche pas ???
+    void Update()
+    { // GetComponent Marche pas ???
 
         if (ButtonBehavior != null)
         {
             iOnOff = ButtonBehavior.OnOff();
             modOnOff = iOnOff % 4;
-            if (destination_1 == destination_3 && destination_2 == destination_4) {
+            if (destination_1 == destination_3 && destination_2 == destination_4)
+            {
                 mod2OnOff = iOnOff % 2;
                 transform.rotation = Quaternion.EulerAngles(new Vector3(0, 0, startAngle - Mathf.PI / 2 * (SensRotation * (float)mod2OnOff)));
             }
             else
             {
                 transform.rotation = Quaternion.EulerAngles(new Vector3(0, 0, startAngle - Mathf.PI / 2 * (SensRotation * (float)modOnOff)));
+
             }
         }
     }

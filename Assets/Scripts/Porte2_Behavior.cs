@@ -54,8 +54,8 @@ public class Porte2_Behavior : MonoBehaviour {
 
     public Vector3 GetNewDestination()
     {
-        if (direction == "Horizontal") { return destination_Horizontal; }
-        else if (direction == "Vertical") { return destination_Vertical; }
+        if (direction == "Horizontal") { return destination_Vertical; }
+        else if (direction == "Vertical") { return destination_Horizontal; }
         else { return Vector2.zero; }
 
     }

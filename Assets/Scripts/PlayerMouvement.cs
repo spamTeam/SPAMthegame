@@ -9,14 +9,14 @@ public class PlayerMouvement : MonoBehaviour {
     string Tag_currentPoint;
     float timer;
     Vector3 initPos;
-    Vector3 startPos;
+    //Vector3 startPos;
     Vector3 destination;
     Vector3 newDestination;
 
 
     void Start () {
         timer = Time.time;
-        startPos = transform.position;
+        //startPos = transform.position;
     }
 
 
