@@ -78,7 +78,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d9316a3599e074a41928b135d45a7d03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneName: LevelTheo
+  sceneName: Level
 --- !u!212 &212580112896936744
 SpriteRenderer:
   m_ObjectHideFlags: 1
