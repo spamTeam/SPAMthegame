@@ -506,7 +506,7 @@ Prefab:
         type: 2}
       propertyPath: ButtonBehavior
       value: 
-      objectReference: {fileID: 1956368581}
+      objectReference: {fileID: 938335771}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da644066005e774e859f451a8ca766f, type: 2}
   m_IsPrefabAsset: 0
@@ -752,7 +752,7 @@ Prefab:
     - target: {fileID: 114580724107866016, guid: 8650dcc6ab3eecd4886e83eb80cffc85,
         type: 2}
       propertyPath: destination_Up.y
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1151126200746210, guid: 8650dcc6ab3eecd4886e83eb80cffc85, type: 2}
       propertyPath: m_Name
@@ -761,7 +761,7 @@ Prefab:
     - target: {fileID: 114580724107866016, guid: 8650dcc6ab3eecd4886e83eb80cffc85,
         type: 2}
       propertyPath: destination_Left.x
-      value: 0
+      value: -3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8650dcc6ab3eecd4886e83eb80cffc85, type: 2}
@@ -1028,12 +1028,12 @@ Prefab:
     - target: {fileID: 114580724107866016, guid: 8650dcc6ab3eecd4886e83eb80cffc85,
         type: 2}
       propertyPath: destination_Right.x
-      value: 5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114580724107866016, guid: 8650dcc6ab3eecd4886e83eb80cffc85,
         type: 2}
       propertyPath: destination_Up.y
-      value: 0
+      value: 1.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8650dcc6ab3eecd4886e83eb80cffc85, type: 2}
@@ -1209,7 +1209,7 @@ Prefab:
         type: 2}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: 2c250c83119d66b45bbb07989368e192, type: 2}
+      objectReference: {fileID: 9100000, guid: 7ae4ffe615df7624dbd96b9ec019ff8a, type: 2}
     - target: {fileID: 1934054469250452, guid: 7da644066005e774e859f451a8ca766f, type: 2}
       propertyPath: m_Name
       value: porte-4patternAnimate (1)
@@ -1256,7 +1256,7 @@ Prefab:
         type: 2}
       propertyPath: ButtonBehavior
       value: 
-      objectReference: {fileID: 938335771}
+      objectReference: {fileID: 1956368581}
     - target: {fileID: 114053235807031836, guid: 7da644066005e774e859f451a8ca766f,
         type: 2}
       propertyPath: destination_1.x
@@ -1342,7 +1342,7 @@ Prefab:
     - target: {fileID: 114580724107866016, guid: 8650dcc6ab3eecd4886e83eb80cffc85,
         type: 2}
       propertyPath: destination_Up.y
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1151126200746210, guid: 8650dcc6ab3eecd4886e83eb80cffc85, type: 2}
       propertyPath: m_Name
@@ -1352,6 +1352,11 @@ Prefab:
         type: 2}
       propertyPath: destination_Left.x
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114580724107866016, guid: 8650dcc6ab3eecd4886e83eb80cffc85,
+        type: 2}
+      propertyPath: destination_Down.y
+      value: -3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8650dcc6ab3eecd4886e83eb80cffc85, type: 2}
