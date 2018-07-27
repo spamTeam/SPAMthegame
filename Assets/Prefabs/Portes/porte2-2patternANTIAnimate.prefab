@@ -36,13 +36,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1263430158794230}
-  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 14.71, y: 1.35, z: 0}
   m_LocalScale: {x: 0.39367816, y: 0.39367816, z: 0.39367804}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &61634422863516242
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -97,14 +97,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d479ac46a9ad74aab594f5d2acc0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Horizontal1: {x: 0, y: -3}
-  Vertical1: {x: 5, y: 0}
-  Horizontal2: {x: 0, y: -3}
-  Vertical2: {x: 5, y: 0}
-  Horizontal3: {x: 0, y: -3}
-  Vertical3: {x: 5, y: 0}
-  Horizontal4: {x: 0, y: -3}
-  Vertical4: {x: 5, y: 0}
+  Horizontal1: {x: 0, y: 0}
+  Vertical1: {x: 0, y: 0}
+  Horizontal2: {x: 0, y: 0}
+  Vertical2: {x: 0, y: 0}
+  Horizontal3: {x: 0, y: 0}
+  Vertical3: {x: 0, y: 0}
+  Horizontal4: {x: 0, y: 0}
+  Vertical4: {x: 0, y: 0}
   ButtonBehavior: {fileID: 0}
   SensRotation: 1
   transitionAnim1: {fileID: 95641202291643954}
