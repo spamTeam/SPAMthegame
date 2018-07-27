@@ -97,14 +97,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d479ac46a9ad74aab594f5d2acc0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination_Horizontal1: {x: 3, y: 0}
-  destination_Vertical1: {x: 0, y: 3}
-  destination_Horizontal2: {x: 3, y: 0}
-  destination_Vertical2: {x: 0, y: 3}
-  destination_Horizontal3: {x: 3, y: 0}
-  destination_Vertical3: {x: 0, y: 3}
-  destination_Horizontal4: {x: 3, y: 0}
-  destination_Vertical4: {x: 0, y: 3}
+  Horizontal1: {x: 0, y: 0}
+  Vertical1: {x: 0, y: 0}
+  Horizontal2: {x: 0, y: 0}
+  Vertical2: {x: 0, y: 0}
+  Horizontal3: {x: 0, y: 0}
+  Vertical3: {x: 0, y: 0}
+  Horizontal4: {x: 0, y: 0}
+  Vertical4: {x: 0, y: 0}
   ButtonBehavior: {fileID: 0}
   SensRotation: 1
   transitionAnim1: {fileID: 95027521412439236}
@@ -140,8 +140,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 392048427
-  m_SortingLayer: 1
+  m_SortingLayerID: 1194496775
+  m_SortingLayer: 3
   m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 33c0f6bbb5d18e441987f78efcb43bd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

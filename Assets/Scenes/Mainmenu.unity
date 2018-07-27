@@ -385,9 +385,9 @@ MonoBehaviour:
   transitionAnim3: {fileID: 1011919461}
   transitionAnim4: {fileID: 2002327404}
   sceneName1: Level11
-  sceneName2: Level12
-  sceneName3: Level13
-  sceneName4: Level14
+  sceneName2: Level21
+  sceneName3: Level31
+  sceneName4: Level41
   keypresslevel1: 49
   keypresslevel2: 50
   keypresslevel3: 51

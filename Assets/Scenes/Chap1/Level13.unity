@@ -229,6 +229,31 @@ Prefab:
       propertyPath: ButtonBehavior
       value: 
       objectReference: {fileID: 1956368581}
+    - target: {fileID: 114757196031930562, guid: 1bd1f925b41d3b54c9eba4a05220cb53,
+        type: 2}
+      propertyPath: destination_1.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114757196031930562, guid: 1bd1f925b41d3b54c9eba4a05220cb53,
+        type: 2}
+      propertyPath: destination_3.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114757196031930562, guid: 1bd1f925b41d3b54c9eba4a05220cb53,
+        type: 2}
+      propertyPath: destination_2.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114757196031930562, guid: 1bd1f925b41d3b54c9eba4a05220cb53,
+        type: 2}
+      propertyPath: destination_4.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 95002267312593562, guid: 1bd1f925b41d3b54c9eba4a05220cb53,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 7cdc6dda5d817e440912d1dfe52f4224, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1bd1f925b41d3b54c9eba4a05220cb53, type: 2}
   m_IsPrefabAsset: 0
@@ -752,6 +777,26 @@ Prefab:
         type: 2}
       propertyPath: destination_Left.x
       value: -5
+      objectReference: {fileID: 0}
+    - target: {fileID: 61328637245113008, guid: 8650dcc6ab3eecd4886e83eb80cffc85,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: -0.008361816
+      objectReference: {fileID: 0}
+    - target: {fileID: 61328637245113008, guid: 8650dcc6ab3eecd4886e83eb80cffc85,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 0.4174118
+      objectReference: {fileID: 0}
+    - target: {fileID: 61328637245113008, guid: 8650dcc6ab3eecd4886e83eb80cffc85,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: 0.00836134
+      objectReference: {fileID: 0}
+    - target: {fileID: 61328637245113008, guid: 8650dcc6ab3eecd4886e83eb80cffc85,
+        type: 2}
+      propertyPath: m_Size.y
+      value: 0.38396287
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8650dcc6ab3eecd4886e83eb80cffc85, type: 2}
