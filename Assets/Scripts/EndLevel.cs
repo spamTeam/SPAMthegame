@@ -11,6 +11,8 @@ public class EndLevel : MonoBehaviour {
     public AudioSource audioEnd;
     public AudioClip soundEnd;
 
+    public Animator transitionAnim2;
+
     // Use this for initialization
     void Start () {
         EndLevelCollision = false;
@@ -21,6 +23,9 @@ public class EndLevel : MonoBehaviour {
         if (!audioEnd.isPlaying)
         {
             audioEnd.PlayOneShot(soundEnd);
+            //animation
+            transitionAnim2.SetTrigger("victory");
+
         }
         yield return new WaitForSeconds(1.2f);
         SceneManager.LoadScene(sceneName);

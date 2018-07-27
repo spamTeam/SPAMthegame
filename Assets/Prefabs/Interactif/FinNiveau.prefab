@@ -59,8 +59,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2.39, y: 2.25}
-    newSize: {x: 0.2, y: 0.2}
+    oldSize: {x: 1.66, y: 2.09}
+    newSize: {x: 1.66, y: 2.09}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -177,6 +177,7 @@ MonoBehaviour:
   sceneName: Level14
   audioEnd: {fileID: 82341480950905764}
   soundEnd: {fileID: 8300000, guid: 0c296b61c56b0364f87edbc062add983, type: 3}
+  transitionAnim2: {fileID: 0}
 --- !u!212 &212580112896936744
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -212,12 +213,12 @@ SpriteRenderer:
   m_SortingLayerID: 1194496775
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5664e8c925d85d3438548d5061030ec0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 09824c507fc14ff4f92f22bd674a4b14, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.2, y: 0.2}
+  m_Size: {x: 1.66, y: 2.09}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

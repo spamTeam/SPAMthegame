@@ -41,4 +41,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Chap2/Level23.unity
     guid: 23180e0e2dee48b438b22253b53c91b9
+  - enabled: 1
+    path: Assets/Scenes/Chap2/Level24.unity
+    guid: 2246fea003a7328408be3e4cd1ea52f1
+  - enabled: 1
+    path: Assets/Scenes/EndWorld4.unity
+    guid: dd999fb5384520e4da4657a8029c51f2
+  - enabled: 1
+    path: Assets/Scenes/EndWorld3.unity
+    guid: 781b57218b99eff44b85547d9c9d8584
+  - enabled: 1
+    path: Assets/Scenes/EndWorld2.unity
+    guid: 6988b5dcb5b55a84594ffab82736d2da
   m_configObjects: {}
