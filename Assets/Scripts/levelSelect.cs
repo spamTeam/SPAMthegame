@@ -8,10 +8,16 @@ public class levelSelect : MonoBehaviour {
 
     public Animator transitionAnim1;
     public Animator transitionAnim2;
+    public Animator transitionAnim3;
+    public Animator transitionAnim4;
     public string sceneName1;
     public string sceneName2;
+    public string sceneName3;
+    public string sceneName4;
     public KeyCode keypresslevel1;
     public KeyCode keypresslevel2;
+    public KeyCode keypresslevel3;
+    public KeyCode keypresslevel4;
 
     //Fonction pour géré l'animation et le passage à la scène suivante
     IEnumerator LoadScene1()
@@ -26,6 +32,20 @@ public class levelSelect : MonoBehaviour {
         transitionAnim2.SetTrigger("level1trig");
         yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(sceneName2);
+    }
+
+    IEnumerator LoadScene3()
+    {
+        transitionAnim3.SetTrigger("level1trig");
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene(sceneName3);
+    }
+
+    IEnumerator LoadScene4()
+    {
+        transitionAnim4.SetTrigger("level1trig");
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene(sceneName4);
     }
 
     // Use this for initialization
@@ -44,8 +64,16 @@ public class levelSelect : MonoBehaviour {
         {
             StartCoroutine(LoadScene2()); //appel de la fonction
         }
+        else if (Input.GetKeyDown(keypresslevel3))
+        {
+            StartCoroutine(LoadScene3()); //appel de la fonction
+        }
+        else if (Input.GetKeyDown(keypresslevel4))
+        {
+            StartCoroutine(LoadScene4()); //appel de la fonction
+        }
 
-        
+
     }
 
 

@@ -5,7 +5,7 @@ AnimationClip:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: level1Select
+  m_Name: World1Select
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
