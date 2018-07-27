@@ -20,6 +20,8 @@ public class PlayerMouvement : MonoBehaviour {
     public AudioSource audioTrap;
     public AudioClip soundTrap;
 
+    public Animator transitionAnim1;
+
 
 
     void Start () {
@@ -32,6 +34,8 @@ public class PlayerMouvement : MonoBehaviour {
         {
             audioTrap.PlayOneShot(soundTrap);
             //anim
+            transitionAnim1.SetTrigger("deathtrig");
+            Debug.Log("test");
         }
         yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
