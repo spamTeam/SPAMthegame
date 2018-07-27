@@ -12,21 +12,27 @@ public class ResetlevelTrap : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    IEnumerator LoadScene()
+    {
+        if (!audioTrap.isPlaying)
+        {
+            audioTrap.PlayOneShot(soundTrap);
+        }
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+
+    // Update is called once per frame
+    void Update () {
         
         if(CollisionTrap)
         {
-            //// sound
-            //if (!audioLance.isPlaying)
-            //{
-            //    audioLance.PlayOneShot(soundLance);
-            //}
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);           
+            StartCoroutine(LoadScene()); //appel de la fonction
         }
-        
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)

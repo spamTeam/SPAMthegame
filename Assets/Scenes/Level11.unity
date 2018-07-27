@@ -466,6 +466,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deltaTime: 0.5
+  audioCollision: {fileID: 0}
+  soundCollision: {fileID: 0}
 --- !u!1 &1324857000
 GameObject:
   m_ObjectHideFlags: 0
@@ -648,15 +650,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4502821912592948, guid: cf0e6368b0742cc419a079624dcbb092, type: 2}
       propertyPath: m_LocalScale.x
-      value: 4.6648
+      value: 0.42489728
       objectReference: {fileID: 0}
     - target: {fileID: 4502821912592948, guid: cf0e6368b0742cc419a079624dcbb092, type: 2}
       propertyPath: m_LocalScale.y
-      value: 4.6648
+      value: 0.42489728
       objectReference: {fileID: 0}
     - target: {fileID: 4502821912592948, guid: cf0e6368b0742cc419a079624dcbb092, type: 2}
       propertyPath: m_LocalScale.z
-      value: 1.1662
+      value: 0.10622432
       objectReference: {fileID: 0}
     - target: {fileID: 114611567370546360, guid: cf0e6368b0742cc419a079624dcbb092,
         type: 2}

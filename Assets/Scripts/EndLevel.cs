@@ -5,24 +5,35 @@ using UnityEngine.SceneManagement;
 
 
 public class EndLevel : MonoBehaviour {
+
     public string sceneName;
     private bool EndLevelCollision;
-
+    public AudioSource audioEnd;
+    public AudioClip soundEnd;
 
     // Use this for initialization
     void Start () {
         EndLevelCollision = false;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    IEnumerator LoadScene()
+    {
+        if (!audioEnd.isPlaying)
+        {
+            audioEnd.PlayOneShot(soundEnd);
+        }
+        yield return new WaitForSeconds(1.2f);
+        SceneManager.LoadScene(sceneName);
+    }
+
+    // Update is called once per frame
+    void Update () {
 
         if (EndLevelCollision)
         {
-            if (Input.GetButtonDown("NextLevel"))
-            {
-                SceneManager.LoadScene(sceneName);
-            }
+
+            StartCoroutine(LoadScene()); //appel de la fonction
+
         }
 
     }
