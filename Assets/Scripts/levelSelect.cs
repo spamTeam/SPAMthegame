@@ -19,34 +19,59 @@ public class levelSelect : MonoBehaviour {
     public KeyCode keypresslevel3;
     public KeyCode keypresslevel4;
 
+    public AudioSource audioLevel;
+    public AudioClip soundLevel;
+
     //Fonction pour géré l'animation et le passage à la scène suivante
     IEnumerator LoadScene1()
     {
-        transitionAnim1.SetTrigger("level1trig");
+        if (!audioLevel.isPlaying)
+        {
+            transitionAnim1.SetTrigger("level1trig");
+            audioLevel.PlayOneShot(soundLevel);
+        }
+        
         yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(sceneName1);
     }
 
     IEnumerator LoadScene2()
     {
-        transitionAnim2.SetTrigger("level1trig");
+        if (!audioLevel.isPlaying)
+        {
+            transitionAnim2.SetTrigger("level1trig");
+            audioLevel.PlayOneShot(soundLevel);
+        }
+        
         yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(sceneName2);
     }
 
     IEnumerator LoadScene3()
     {
-        transitionAnim3.SetTrigger("level1trig");
+        if (!audioLevel.isPlaying)
+        {
+            transitionAnim3.SetTrigger("level1trig");
+            audioLevel.PlayOneShot(soundLevel);
+        }
+        
         yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(sceneName3);
     }
 
     IEnumerator LoadScene4()
     {
-        transitionAnim4.SetTrigger("level1trig");
+        if (!audioLevel.isPlaying)
+        {
+            transitionAnim4.SetTrigger("level1trig");
+            audioLevel.PlayOneShot(soundLevel);
+        }
+        
         yield return new WaitForSeconds(1.0f);
         SceneManager.LoadScene(sceneName4);
     }
+
+
 
     // Use this for initialization
     void Start () {
