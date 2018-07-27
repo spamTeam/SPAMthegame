@@ -36,13 +36,13 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1263430158794230}
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.17, y: -4.82, z: 0}
-  m_LocalScale: {x: 0.3571101, y: 0.3571101, z: 0.35711}
+  m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
+  m_LocalPosition: {x: 14.71, y: 1.35, z: 0}
+  m_LocalScale: {x: 0.39367816, y: 0.39367816, z: 0.39367804}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!61 &61634422863516242
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -55,7 +55,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.48659432, y: -0.51619196}
+  m_Offset: {x: 0.2547403, y: -0.24866343}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -66,7 +66,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.9358501, y: 2}
+  m_Size: {x: 4.111742, y: 2.535057}
   m_EdgeRadius: 0
 --- !u!95 &95641202291643954
 Animator:
@@ -97,14 +97,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14d479ac46a9ad74aab594f5d2acc0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destination_Horizontal1: {x: 0, y: 0}
-  destination_Vertical1: {x: 0, y: 0}
-  destination_Horizontal2: {x: 0, y: 0}
-  destination_Vertical2: {x: 0, y: 0}
-  destination_Horizontal3: {x: 0, y: 0}
-  destination_Vertical3: {x: 0, y: 0}
-  destination_Horizontal4: {x: 0, y: 0}
-  destination_Vertical4: {x: 0, y: 0}
+  Horizontal1: {x: 0, y: -3}
+  Vertical1: {x: 5, y: 0}
+  Horizontal2: {x: 0, y: -3}
+  Vertical2: {x: 5, y: 0}
+  Horizontal3: {x: 0, y: -3}
+  Vertical3: {x: 5, y: 0}
+  Horizontal4: {x: 0, y: -3}
+  Vertical4: {x: 5, y: 0}
   ButtonBehavior: {fileID: 0}
   SensRotation: 1
   transitionAnim1: {fileID: 95641202291643954}
