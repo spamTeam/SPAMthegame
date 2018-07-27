@@ -52,7 +52,7 @@ public class PlayerMouvement : MonoBehaviour {
                     initPos = transform.position; // position au début du mouvement
                     timer = Time.time + deltaTime; // Le timer est mis à jour, trigger de la highest condition if
                 } // Si la hitbox est une Attente
-                else if (Tag_currentPoint == "Attente") 
+                else if (Tag_currentPoint == "Attente")
                 {
                     newDestination = Pos_currentPoint.GetComponent<AttenteBehavior>().GetNewDestination();
                     destination = transform.position + newDestination;
@@ -62,7 +62,7 @@ public class PlayerMouvement : MonoBehaviour {
                         timer = Time.time + deltaTime;
                     }
                 }
-                
+
                 else if (Tag_currentPoint == "Porte2Corner")
                 {
                     // sound
@@ -103,6 +103,10 @@ public class PlayerMouvement : MonoBehaviour {
                     initPos = transform.position; // position au début du mouvement
                     timer = Time.time + deltaTime; // Le timer est mis à jour, trigger de la highest condition if
                 }
+                else if (Tag_currentPoint == "Trap")
+                {
+                    // anim
+                }
             }
             else // Si ni mouvement, ni collision avec hitbox
             {
@@ -140,6 +144,10 @@ public class PlayerMouvement : MonoBehaviour {
         {
             Tag_currentPoint = "CornerInhib";
             Pos_currentPoint = collision.transform;
+        }
+        else if (collision.tag == "Trap")
+        {
+            Tag_currentPoint = "Trap";
         }
     }
 
