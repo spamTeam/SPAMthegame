@@ -428,6 +428,14 @@ Prefab:
       propertyPath: transitionAnim2
       value: 
       objectReference: {fileID: 1295224657}
+    - target: {fileID: 4502821912592948, guid: cf0e6368b0742cc419a079624dcbb092, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4502821912592948, guid: cf0e6368b0742cc419a079624dcbb092, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf0e6368b0742cc419a079624dcbb092, type: 2}
   m_IsPrefabAsset: 0
