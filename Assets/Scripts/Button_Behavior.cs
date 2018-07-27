@@ -6,8 +6,8 @@ public class Button_Behavior : MonoBehaviour {
 
     private bool InInterrupteur;
     private double iOnOff;
-    public AudioSource audio;
-    public AudioClip sound;
+    public AudioSource audioButton;
+    public AudioClip soundButton;
 
     // Use this for initialization
     void Start () {
@@ -23,9 +23,9 @@ public class Button_Behavior : MonoBehaviour {
         { // Si bouton Espace appuyé
             if (Input.GetButtonDown("Interaction"))
             {
-                if (!audio.isPlaying)
+                if (!audioButton.isPlaying)
                 {
-                    audio.PlayOneShot(sound);
+                    audioButton.PlayOneShot(soundButton);
                 }
                 iOnOff += 1; // 1 ou 0 selon appuie barre espace
                 //Debug.Log(iOnOff);
