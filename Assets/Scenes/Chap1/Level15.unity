@@ -182,76 +182,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4926256387525088, guid: e169195a74e0c324cb431761bd2e755e, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -270
-      objectReference: {fileID: 0}
-    - target: {fileID: 114901587786763858, guid: e169195a74e0c324cb431761bd2e755e,
-        type: 2}
-      propertyPath: SensRotation
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114901587786763858, guid: e169195a74e0c324cb431761bd2e755e,
-        type: 2}
-      propertyPath: Right1.y
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114901587786763858, guid: e169195a74e0c324cb431761bd2e755e,
-        type: 2}
-      propertyPath: Down1.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114901587786763858, guid: e169195a74e0c324cb431761bd2e755e,
-        type: 2}
-      propertyPath: Up1.x
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114901587786763858, guid: e169195a74e0c324cb431761bd2e755e,
-        type: 2}
-      propertyPath: Left2.y
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114901587786763858, guid: e169195a74e0c324cb431761bd2e755e,
-        type: 2}
-      propertyPath: Up2.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114901587786763858, guid: e169195a74e0c324cb431761bd2e755e,
-        type: 2}
-      propertyPath: Right3.y
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114901587786763858, guid: e169195a74e0c324cb431761bd2e755e,
-        type: 2}
-      propertyPath: Up3.x
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114901587786763858, guid: e169195a74e0c324cb431761bd2e755e,
-        type: 2}
-      propertyPath: Left4.y
-      value: -3
-      objectReference: {fileID: 0}
-    - target: {fileID: 114901587786763858, guid: e169195a74e0c324cb431761bd2e755e,
-        type: 2}
-      propertyPath: Up4.x
-      value: 5
-      objectReference: {fileID: 0}
     - target: {fileID: 114901587786763858, guid: e169195a74e0c324cb431761bd2e755e,
         type: 2}
       propertyPath: ButtonBehavior
       value: 
       objectReference: {fileID: 1956368581}
-    - target: {fileID: 95711732127878922, guid: e169195a74e0c324cb431761bd2e755e,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 95711732127878922, guid: e169195a74e0c324cb431761bd2e755e,
-        type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 22100000, guid: 0b3bf1b854bf2db4499c3f28481fd705,
-        type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e169195a74e0c324cb431761bd2e755e, type: 2}
   m_IsPrefabAsset: 0
