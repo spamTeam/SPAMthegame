@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class PlayerMouvement : MonoBehaviour {
 
@@ -15,9 +17,24 @@ public class PlayerMouvement : MonoBehaviour {
     public AudioSource audioCollision;
     public AudioClip soundCollision;
 
+    public AudioSource audioTrap;
+    public AudioClip soundTrap;
+
+
 
     void Start () {
         timer = Time.time;
+    }
+
+    IEnumerator LoadScene()
+    {
+        if (!audioTrap.isPlaying)
+        {
+            audioTrap.PlayOneShot(soundTrap);
+            //anim
+        }
+        yield return new WaitForSeconds(1.0f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 
@@ -103,10 +120,6 @@ public class PlayerMouvement : MonoBehaviour {
                     initPos = transform.position; // position au début du mouvement
                     timer = Time.time + deltaTime; // Le timer est mis à jour, trigger de la highest condition if
                 }
-                else if (Tag_currentPoint == "Trap")
-                {
-                    // anim
-                }
             }
             else // Si ni mouvement, ni collision avec hitbox
             {
@@ -147,7 +160,8 @@ public class PlayerMouvement : MonoBehaviour {
         }
         else if (collision.tag == "Trap")
         {
-            Tag_currentPoint = "Trap";
+            StartCoroutine(LoadScene()); //appel de la fonction
+
         }
     }
 
