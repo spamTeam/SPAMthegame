@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level14.unity
     guid: ca3937bfe94e6664a83217cf16f2f8e3
+  - enabled: 0
+    path: Assets/Scenes/testZoneMic.unity
+    guid: e6cffd1f93822234dbdac7e61b29c4e7
   m_configObjects: {}
