@@ -9,14 +9,15 @@ public class PlayerMouvement : MonoBehaviour {
     string Tag_currentPoint;
     float timer;
     Vector3 initPos;
-    //Vector3 startPos;
     Vector3 destination;
     Vector3 newDestination;
+
+    public AudioSource audioCollision;
+    public AudioClip soundCollision;
 
 
     void Start () {
         timer = Time.time;
-        //startPos = transform.position;
     }
 
 
@@ -38,6 +39,14 @@ public class PlayerMouvement : MonoBehaviour {
             {   // Si la hitbox est une porte
                 if (Tag_currentPoint == "Porte")
                 {
+
+                    // sound
+                    if (!audioCollision.isPlaying)
+                    {
+                        audioCollision.PlayOneShot(soundCollision);
+                    }
+
+
                     newDestination = Pos_currentPoint.GetComponent<PorteBehavior>().GetNewDestination();
                     destination = transform.position + newDestination; // nouvelle destination
                     initPos = transform.position; // position au début du mouvement
@@ -56,6 +65,12 @@ public class PlayerMouvement : MonoBehaviour {
                 
                 else if (Tag_currentPoint == "Porte2Corner")
                 {
+                    // sound
+                    if (!audioCollision.isPlaying)
+                    {
+                        audioCollision.PlayOneShot(soundCollision);
+                    }
+
                     newDestination = Pos_currentPoint.GetComponent<Porte2_Behavior>().GetNewDestination();
                     destination = transform.position + newDestination; // nouvelle destination
                     initPos = transform.position; // position au début du mouvement
@@ -64,6 +79,12 @@ public class PlayerMouvement : MonoBehaviour {
 
                 else if (Tag_currentPoint == "CornerPorte")
                 {
+                    // sound
+                    if (!audioCollision.isPlaying)
+                    {
+                        audioCollision.PlayOneShot(soundCollision);
+                    }
+
                     newDestination = Pos_currentPoint.GetComponent<Corner_Behavior>().GetNewDestination();
                     destination = transform.position + newDestination; // nouvelle destination
                     initPos = transform.position; // position au début du mouvement
@@ -71,6 +92,12 @@ public class PlayerMouvement : MonoBehaviour {
                 }
                 else if (Tag_currentPoint == "CornerInhib")
                 {
+                    // sound
+                    if (!audioCollision.isPlaying)
+                    {
+                        audioCollision.PlayOneShot(soundCollision);
+                    }
+
                     newDestination = Pos_currentPoint.GetComponent<Porte2Inhib_Behavior>().GetNewDestination();
                     destination = transform.position + newDestination; // nouvelle destination
                     initPos = transform.position; // position au début du mouvement

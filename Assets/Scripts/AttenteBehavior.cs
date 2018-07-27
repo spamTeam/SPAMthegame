@@ -11,6 +11,10 @@ public class AttenteBehavior : MonoBehaviour {
     private Vector2 destination;
     private string Pressed_Direction;
 
+    public AudioSource audioLance;
+    public AudioClip soundLance;
+
+
     // Use this for initialization
     void Start() {
     }
@@ -21,7 +25,42 @@ public class AttenteBehavior : MonoBehaviour {
         Pressed_Direction = "None";
         if (Input.anyKeyDown)
         {
-            Pressed_Direction = Input.inputString;
+
+            if (Input.GetButtonDown("Left")) {
+                Pressed_Direction = "a" ;
+                // sound
+                if (!audioLance.isPlaying)
+                {
+                    audioLance.PlayOneShot(soundLance);
+                }
+            }
+            else if(Input.GetButtonDown("Right")) {
+                Pressed_Direction = "d";
+                // sound
+                if (!audioLance.isPlaying)
+                {
+                    audioLance.PlayOneShot(soundLance);
+                }
+            }
+            else if (Input.GetButtonDown("Down"))
+            {
+                Pressed_Direction = "s";
+                // sound
+                if (!audioLance.isPlaying)
+                {
+                    audioLance.PlayOneShot(soundLance);
+                }
+            }
+            else if (Input.GetButtonDown("Up"))
+            {
+                Pressed_Direction = "w";
+                // sound
+                if (!audioLance.isPlaying)
+                {
+                    audioLance.PlayOneShot(soundLance);
+                }
+            }
+
         }
 
     }

@@ -7,7 +7,8 @@ using UnityEngine.SceneManagement;
 public class ResetlevelTrap : MonoBehaviour {
 
     bool CollisionTrap = false;
-
+    public AudioSource audioTrap;
+    public AudioClip soundTrap;
 
     // Use this for initialization
     void Start () {
@@ -18,6 +19,11 @@ public class ResetlevelTrap : MonoBehaviour {
         
         if(CollisionTrap)
         {
+            //// sound
+            //if (!audioLance.isPlaying)
+            //{
+            //    audioLance.PlayOneShot(soundLance);
+            //}
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);           
         }
         
