@@ -419,6 +419,11 @@ Prefab:
       value: 
       objectReference: {fileID: 22100000, guid: c8725e09b7ed9a34bb2f88cd8eeb1a4e,
         type: 2}
+    - target: {fileID: 114053235807031836, guid: 7da644066005e774e859f451a8ca766f,
+        type: 2}
+      propertyPath: SensRotation
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7da644066005e774e859f451a8ca766f, type: 2}
   m_IsPrefabAsset: 0
