@@ -48,6 +48,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Porte
+  - name: Decor
     uniqueID: 392048427
+    locked: 0
+  - name: Chemin
+    uniqueID: 2141697589
+    locked: 0
+  - name: Interactif
+    uniqueID: 1194496775
+    locked: 0
+  - name: Player
+    uniqueID: 3752076117
     locked: 0
