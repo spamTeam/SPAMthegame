@@ -113,6 +113,62 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &19238148
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4484697363810960, guid: 6f8c82a0e3da07745a6e40d5f0a01da0, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 16.847963
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484697363810960, guid: 6f8c82a0e3da07745a6e40d5f0a01da0, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.6233102
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484697363810960, guid: 6f8c82a0e3da07745a6e40d5f0a01da0, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.630102
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484697363810960, guid: 6f8c82a0e3da07745a6e40d5f0a01da0, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484697363810960, guid: 6f8c82a0e3da07745a6e40d5f0a01da0, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484697363810960, guid: 6f8c82a0e3da07745a6e40d5f0a01da0, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484697363810960, guid: 6f8c82a0e3da07745a6e40d5f0a01da0, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4484697363810960, guid: 6f8c82a0e3da07745a6e40d5f0a01da0, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 114859504125720160, guid: 6f8c82a0e3da07745a6e40d5f0a01da0,
+        type: 2}
+      propertyPath: EndWorld
+      value: EndWorld2
+      objectReference: {fileID: 0}
+    - target: {fileID: 82234852945391360, guid: 6f8c82a0e3da07745a6e40d5f0a01da0,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 8fcf80d9a4d8269469e37914ef7adb83, type: 3}
+    - target: {fileID: 1108056379647890, guid: 6f8c82a0e3da07745a6e40d5f0a01da0, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 6f8c82a0e3da07745a6e40d5f0a01da0, type: 2}
+  m_IsPrefabAsset: 0
 --- !u!1 &187125015
 GameObject:
   m_ObjectHideFlags: 0
@@ -495,6 +551,11 @@ Prefab:
     - target: {fileID: 4502821912592948, guid: cf0e6368b0742cc419a079624dcbb092, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.14038064
+      objectReference: {fileID: 0}
+    - target: {fileID: 82341480950905764, guid: cf0e6368b0742cc419a079624dcbb092,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cf0e6368b0742cc419a079624dcbb092, type: 2}

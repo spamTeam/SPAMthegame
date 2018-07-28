@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class MusicController : MonoBehaviour {
 
+    public string EndWorld;
     AudioSource music;
 
 	// Use this for initialization
@@ -15,6 +16,7 @@ public class MusicController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (SceneManager.GetActiveScene().name.Equals("Mainmenu") || SceneManager.GetActiveScene().name.Equals("EndWorld1")) { music.Stop(); }
+        Debug.Log("test");
+        if (SceneManager.GetActiveScene().name.Equals("Mainmenu") || SceneManager.GetActiveScene().name.Equals(EndWorld)) { music.Stop(); }
 	}
 }

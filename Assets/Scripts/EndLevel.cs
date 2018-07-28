@@ -22,6 +22,7 @@ public class EndLevel : MonoBehaviour {
     {
         if (!audioEnd.isPlaying)
         {
+            //audioSource.mute = !audioSource.mute;
             audioEnd.PlayOneShot(soundEnd);
             //animation
             transitionAnim2.SetTrigger("victory");
